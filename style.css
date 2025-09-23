@@ -18,11 +18,11 @@ div.flex-container {
 div.gallery {
   margin: 5px;
   border: 1px solid var(--cor-letra);
-  width: 175.5px;
+  width: 280.8px;
   background: var(--cor-fundo);
 }
       
 div.gallery img {
-  width: 175.5px;
-  height: 248px;
+  width: 280.8px;
+  height: 396.8px;
 }

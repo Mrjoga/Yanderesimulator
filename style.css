@@ -1,0 +1,28 @@
+:root {
+  --cor-fundo: rgb(245, 111, 196);
+  --cor-letra: rgb(242, 218, 233);
+}
+
+body{
+    background-color: var(--cor-fundo);
+
+}
+
+div.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding:15px;
+    border: none;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid var(--cor-letra);
+  width: 330px;
+  background: var(--cor-fundo);
+}
+      
+div.gallery img {
+  width: 330px;
+  height: 330px;
+}

@@ -1,5 +1,5 @@
 :root {
-  --cor-fundo: rgb(245, 111, 196);
+  --cor-fundo: rgb(226, 114, 185);
   --cor-letra: rgb(242, 218, 233);
 }
 
@@ -16,13 +16,13 @@ div.flex-container {
 }
 
 div.gallery {
-  margin: 5px;
-  border: 1px solid var(--cor-letra);
-  width: 140.4px;
-  background: var(--cor-fundo);
+    margin: 5px;
+    border: 1px solid var(--cor-letra);
+    background: var(--cor-fundo);
+    width: 200px;
 }
       
 div.gallery img {
-  width: 140.4px;
-  height: 198.4px;
+    width: 200px;
+    height: auto;
 }

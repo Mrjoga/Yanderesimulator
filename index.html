@@ -9,41 +9,53 @@
 <body>
     <header>
     </header>
-
-    <img class="thumb" id="mainImage" src="Ayano.png" alt="Ayano Aishi">
+    
+    <img class="thumb" id="mainImage" src="image/Ayano.png" alt="Ayano Aishi">
 
     <div class="flex-container">
         <div class="gallery">
-            <img src="Ayano.png" alt="Ayano Aishi" onclick="changeImage(this)">
+            <img src="image/Ayano.png" alt="Ayano Aishi" onclick="changeImage(this, 'Ayano Aishi', 'Ayano Aishi é a protagonista do jogo Yandere Simulator. Ela é uma jovem obsessiva que se apaixona por Senpai e fará qualquer coisa para ficar com ele.')">
         </div>
         <div class="gallery">
-            <img src="RyobaYoung.png" alt="Ryoba Aishi" onclick="changeImage(this)">
+            <img src="image/RyobaYoung.png" alt="Ryoba Aishi" onclick="changeImage(this, 'Ryoba Aishi', 'Ryoba Aishi é a mãe de Ayano. Ela também foi uma yandere no passado e matou para proteger seu amor.')">
         </div>
         <div class="gallery">
-            <img src="DozukiYoung.png" alt="Dozuki Aishi" onclick="changeImage(this)">
+            <img src="DozukiYoung.png" alt="Dozuki Aishi" onclick="changeImage(this, 'Dozuki Aishi', 'Dozuki Aishi é uma mulher fria e calculista, com um passado sombrio.')">
         </div>
         <div class="gallery">
-            <img src="KatabaYoung.png" alt="Kataba Aishi" onclick="changeImage(this)">
+            <img src="KatabaYoung.png" alt="Kataba Aishi" onclick="changeImage(this, 'Kataba Aishi', 'Kataba Aishi é uma personagem que tem um papel menor, mas com uma história emocional.')">
         </div>
         <div class="gallery">
-            <img src="Azebiki.png" alt="Azebiki Aishi" onclick="changeImage(this)">
+            <img src="Azebiki.png" alt="Azebiki Aishi" onclick="changeImage(this, 'Azebiki Aishi', 'Azebiki Aishi é uma personagem com um passado trágico, mas com um futuro promissor.')">
         </div>
         <div class="gallery">
-            <img src="AishiTwins.png" alt="Kugi Aishi and Hiki Aishi" onclick="changeImage(this)">
+            <img src="AishiTwins.png" alt="Kugi Aishi and Hiki Aishi" onclick="changeImage(this, 'Kugi e Hiki Aishi', 'Kugi e Hiki Aishi são gêmeos misteriosos, com uma relação complexa entre si.')">
         </div>
         <div class="gallery">
-            <img src="Kijiyose.png" alt="Kijiyose Aishi" onclick="changeImage(this)">
+            <img src="Kijiyose.png" alt="Kijiyose Aishi" onclick="changeImage(this, 'Kijiyose Aishi', 'Kijiyose Aishi é uma personagem com muitos segredos e uma história que se entrelaça com a de Ayano.')">
         </div>
         <div class="gallery">
-            <img src="Oga.png" alt="Oga Aishi" onclick="changeImage(this)">
+            <img src="Oga.png" alt="Oga Aishi" onclick="changeImage(this, 'Oga Aishi', 'Oga Aishi é um dos personagens mais ameaçadores, com um passado de crimes e mistérios.')">
         </div>
     </div>
-
+    
+    <div id="characterStory">
+        <h2 id="characterTitle">Ayano Aishi</h2>
+        <p id="storyText">Ayano Aishi é a protagonista do jogo Yandere Simulator. Ela é uma jovem obsessiva que se apaixona por Senpai e fará qualquer coisa para ficar com ele.</p> <!-- Descrição inicial -->
+    </div>
+    
     <script>
-        function changeImage(element) {
+        function changeImage(element, characterName, story) {
             const mainImage = document.getElementById("mainImage");
+            const storyText = document.getElementById("storyText");
+            const characterTitle = document.getElementById("characterTitle");
+            
             mainImage.src = element.src;
             mainImage.alt = element.alt;
+            
+            characterTitle.textContent = characterName;
+            
+            storyText.textContent = story;
         }
     </script>
     

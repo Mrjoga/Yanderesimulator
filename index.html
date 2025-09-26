@@ -10,32 +10,42 @@
     <header>
     </header>
 
-    <div class=flex-container>
-    <div class="gallery">
-        <img src="Ayano.png" alt="Ayano Aishi">
-     </div>
-    <div class="gallery">
-        <img src="RyobaYoung.png" alt="Ryoba Aishi" >
-     </div>
-    <div class="gallery">
-        <img src="DozukiYoung.png" alt="Dozuki Aishi" >
+    <img class="thumb" id="mainImage" src="Ayano.png" alt="Ayano Aishi">
+
+    <div class="flex-container">
+        <div class="gallery">
+            <img src="Ayano.png" alt="Ayano Aishi" onclick="changeImage(this)">
+        </div>
+        <div class="gallery">
+            <img src="RyobaYoung.png" alt="Ryoba Aishi" onclick="changeImage(this)">
+        </div>
+        <div class="gallery">
+            <img src="DozukiYoung.png" alt="Dozuki Aishi" onclick="changeImage(this)">
+        </div>
+        <div class="gallery">
+            <img src="KatabaYoung.png" alt="Kataba Aishi" onclick="changeImage(this)">
+        </div>
+        <div class="gallery">
+            <img src="Azebiki.png" alt="Azebiki Aishi" onclick="changeImage(this)">
+        </div>
+        <div class="gallery">
+            <img src="AishiTwins.png" alt="Kugi Aishi and Hiki Aishi" onclick="changeImage(this)">
+        </div>
+        <div class="gallery">
+            <img src="Kijiyose.png" alt="Kijiyose Aishi" onclick="changeImage(this)">
+        </div>
+        <div class="gallery">
+            <img src="Oga.png" alt="Oga Aishi" onclick="changeImage(this)">
+        </div>
     </div>
-    <div class="gallery">
-        <img src="KatabaYoung.png" alt="Kataba Aishi" >
-    </div>
-     <div class="gallery">
-        <img src="Azebiki.png" alt="Azebiki Aishi" >
-     </div>
-    <div class="gallery">
-        <img src="AishiTwins.png" alt="Kugi Aishi and Hiki Aishi" >
-     </div>
-    <div class="gallery">
-        <img src="Kijiyose.png" alt="Kijiyose Aishi" >
-    </div>
-    <div class="gallery">
-        <img src="Oga.png" alt="Oga Aishi" >
-    </div>
-    </div>
+
+    <script>
+        function changeImage(element) {
+            const mainImage = document.getElementById("mainImage");
+            mainImage.src = element.src;
+            mainImage.alt = element.alt;
+        }
+    </script>
     
 </body>
 </html>

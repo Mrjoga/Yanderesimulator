@@ -1,28 +1,53 @@
 :root {
-  --cor-fundo: rgb(226, 114, 185);
-  --cor-letra: rgb(242, 218, 233);
+    --cor-fundo: rgb(226, 114, 185);
+    --cor-letra: rgb(242, 218, 233);
+  }
+
+  *::-webkit-scrollbar {
+    width: 10px;
 }
 
-body{
-    background-color: var(--cor-fundo);
-
+*::-webkit-scrollbar-thumb {
+    background-color: var(--cor-letra);
+    border-radius: 10px;
 }
 
-div.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  padding:15px;
-  border: none;
+*::-webkit-scrollbar-track {
+    background-color: transparent;
 }
-
-div.gallery {
-    margin: 5px;
-    border: 1px solid var(--cor-letra);
-    background: var(--cor-fundo);
-    width: 200px;
-}
-      
-div.gallery img {
-    width: 200px;
+  
+  body{
+      background-color: var(--cor-fundo);
+  
+  }
+  
+  .thumb {
+    width: 400px;
     height: auto;
+    margin: 20px;
+}
+
+  div.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding:15px;
+    border: none;
+  }
+  
+  div.gallery {
+      margin: 5px;
+      border: 1px solid var(--cor-letra);
+      background: var(--cor-fundo);
+      width: 200px;
+  }
+        
+  div.gallery img {
+      width: 200px;
+      height: auto;
+      cursor: pointer;
+      transition: border 0.3s, transform 0.3s;
+  }
+
+  .gallery img:hover {
+    transform: scale(1.05);
 }

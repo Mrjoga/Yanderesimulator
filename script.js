@@ -20,3 +20,11 @@ function changeImage(element, characterName, storyFileName) {
             storyText.textContent = "Erro ao carregar a história: " + error.message;
         });
 }
+
+window.onload = function() {
+    changeImage(
+        document.querySelector('img[alt="Ayano Aishi"]'),
+        "Ayano Aishi",
+        "Ayano.txt"
+    );
+};

@@ -1,40 +1,93 @@
 :root {
     --cor-fundo: rgb(226, 114, 185);
     --cor-letra: rgb(242, 218, 233);
-  }
-
-  *::-webkit-scrollbar {
-    width: 10px;
 }
 
+*::-webkit-scrollbar {
+    width: 10px;
+}
 *::-webkit-scrollbar-thumb {
     background-color: var(--cor-letra);
     border-radius: 10px;
 }
-
 *::-webkit-scrollbar-track {
     background-color: transparent;
 }
-  
-  body{
-      background-color: var(--cor-fundo);
-  
-  }
-  
-  .thumb {
-    width: 400px;
-    height: auto;
-    margin: 20px;
+
+body {
+    background-color: var(--cor-fundo);
+    font-family: Arial, sans-serif;
+    color: var(--cor-letra);
+    margin: 0;
+    padding: 0;
 }
 
-  div.flex-container {
+/* Section principal (descrição esquerda, imagem direita) */
+.personagem {
     display: flex;
-    flex-wrap: nowrap;
-    padding:15px;
-    border: none;
-  }
-  
-  div.gallery {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    gap: 40px;
+}
+
+#characterStory {
+    flex: 1;
+    max-width: 40%;
+}
+
+#characterStory h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+#characterStory p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.ilustracao {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumb {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Galeria embaixo */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.gallery {
+    border: 1px solid var(--cor-letra);
+    border-radius: 8px;
+    background: var(--cor-fundo);
+    width: 150px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    display: block;
+}
+
+.gallery:hover {
+    transform: scale(1.05);
+}  div.gallery {
       margin: 5px;
       border: 1px solid var(--cor-letra);
       background: var(--cor-fundo);

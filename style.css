@@ -33,6 +33,10 @@ body {
 #characterStory {
     flex: 1;
     max-width: 40%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--cor-letra) transparent;
+    border: 1px solid var(--cor-letra);
+    background: var(--cor-fundo);
 }
 
 #characterStory h2 {
@@ -58,7 +62,6 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* Galeria embaixo */
 .flex-container {
     display: flex;
     flex-wrap: wrap;

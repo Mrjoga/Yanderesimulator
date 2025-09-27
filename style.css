@@ -24,7 +24,7 @@ body {
 .personagem {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 30px;
     gap: 40px;
 }
@@ -53,6 +53,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ilustracao img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .thumb {

@@ -25,11 +25,10 @@ body {
   display: flex;
   gap: 40px;
   padding: 30px;
-  align-items: stretch; /* importante */
+  align-items: stretch;
   box-sizing: border-box;
 }
 
-/* caixa de texto */
 #characterStory {
   flex: 1;
   max-width: 40%;
@@ -38,12 +37,10 @@ body {
   border: 1px solid var(--cor-letra);
   background: var(--cor-fundo);
 
-  /* limita a altura para acompanhar a imagem */
-  max-height: calc(80vh - 100px); /* ajuste o -100px conforme header/galeria */
-  overflow-y: auto; /* scrollbar interna */
+  max-height: calc(80vh - 100px);
+  overflow-y: auto;
 }
 
-/* imagem: limitamos também a altura */
 .ilustracao {
   flex: 1;
   display: flex;
@@ -54,7 +51,7 @@ body {
 .thumb {
   max-width: 100%;
   height: auto;
-  max-height: calc(80vh - 100px); /* mesmo limite que o #characterStory */
+  max-height: calc(80vh - 100px);
   display: block;
 }
 

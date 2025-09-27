@@ -37,6 +37,7 @@ body {
     border: 1px solid var(--cor-letra);
     background: var(--cor-fundo);
     height: auto;
+    overflow-y: auto;
 }
 
 #characterStory h2 {

@@ -22,18 +22,35 @@ body {
 }
 
 .personagem {
-    display:flex; 
-    gap:40px; 
-    align-items:stretch; 
-    padding:30px; 
+.personagem {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 30px;
+    gap: 40px;
 }
-#characterStory { 
-    flex:1; 
-    max-width:40%; 
-    border:1px solid var(--cor-letra); 
-    background:var(--cor-fundo); 
-    padding:16px; 
-    box-sizing:border-box; 
+
+#characterStory {
+    flex: 1;
+    min-width: 300px;
+    max-width: 40%;
+    border: 1px solid var(--cor-letra);
+    background: var(--cor-fundo);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px;
+}
+
+#characterStory h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-alingn: center;
+}
+
+#characterStory p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
 }
 .ilustracao img, .thumb { 
     max-width:100%; 

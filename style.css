@@ -22,50 +22,40 @@ body {
 }
 
 .personagem {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 30px;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  align-items: stretch; /* importante */
+  box-sizing: border-box;
 }
 
+/* caixa de texto */
 #characterStory {
-    flex: 1;
-    max-width: 40%;
-    scrollbar-width: thin;
-    scrollbar-color: var(--cor-letra) transparent;
-    border: 1px solid var(--cor-letra);
-    background: var(--cor-fundo);
-    height: 100%;
-    overflow-y: auto;
+  flex: 1;
+  max-width: 40%;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid var(--cor-letra);
+  background: var(--cor-fundo);
+
+  /* limita a altura para acompanhar a imagem */
+  max-height: calc(80vh - 100px); /* ajuste o -100px conforme header/galeria */
+  overflow-y: auto; /* scrollbar interna */
 }
 
-#characterStory h2 {
-    margin-bottom: 10px;
-    font-size: 2rem;
-}
-
-#characterStory p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
+/* imagem: limitamos também a altura */
 .ilustracao {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.ilustracao img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
+.ilustracao img,
 .thumb {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(80vh - 100px); /* mesmo limite que o #characterStory */
+  display: block;
 }
 
 .flex-container {

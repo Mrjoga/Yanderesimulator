@@ -36,7 +36,7 @@ body {
     scrollbar-color: var(--cor-letra) transparent;
     border: 1px solid var(--cor-letra);
     background: var(--cor-fundo);
-    height: auto;
+    height: 100%;
     overflow-y: auto;
 }
 

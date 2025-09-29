@@ -80,7 +80,9 @@ body {
 
 .gallery:hover {
     transform: scale(1.05);
-}  div.gallery {
+}  
+
+div.gallery {
       margin: 5px;
       border: 1px solid var(--cor-letra);
       background: var(--cor-fundo);

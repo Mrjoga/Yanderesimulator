@@ -30,13 +30,12 @@ body {
 }
 
 #characterStory {
-    flex: 1;
-    min-width: 500px;
-    border: 1px solid var(--cor-letra);
-    background: var(--cor-fundo);
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 15px;
+    width: 50%; 
+    height: 300px; 
+    overflow-y: auto; 
+    margin-left: 0; 
+    border: 1px solid var(--cor-letra); 
+    padding: 10px;
 }
 
 #characterStory h2 {

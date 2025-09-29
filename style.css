@@ -32,7 +32,7 @@ body {
 #characterStory {
     flex: 1;
     min-width: 500px;
-    max-width: 40%;
+    max-width: 100%;
     border: 1px solid var(--cor-letra);
     background: var(--cor-fundo);
     overflow-y: auto;

@@ -29,17 +29,3 @@ window.onload = function() {
     );
 
 };
-  const mainImage = document.getElementById('mainImage');
-  const story = document.getElementById('characterStory');
-
-  function matchStoryHeightToImage() {
-    if (!mainImage || !story) return;
-    const imgRect = mainImage.getBoundingClientRect();
-    story.style.height = Math.round(imgRect.height) + 'px';
-    story.style.overflowY = 'auto';
-    story.style.boxSizing = 'border-box';
-  }
-
-  mainImage.addEventListener('load', matchStoryHeightToImage);
-  window.addEventListener('resize', matchStoryHeightToImage);
-  if (mainImage.complete) matchStoryHeightToImage();

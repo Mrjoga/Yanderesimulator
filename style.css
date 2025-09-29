@@ -51,8 +51,8 @@ body {
     text-align: justify;
 }
 .ilustracao img, .thumb { 
-    max-width:50%; 
-    height:auto; 
+    width: 300px;
+    height: auto; 
     display:block; }
 
 .flex-container {

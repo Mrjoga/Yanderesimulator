@@ -27,6 +27,7 @@ body {
     align-items: stretch;
     padding: 30px;
     gap: 40px;
+    border: 1px solid var(--cor-letra);
 }
 
 #characterStory {

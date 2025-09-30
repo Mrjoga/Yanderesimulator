@@ -1,6 +1,8 @@
 :root {
     --cor-fundo: rgb(226, 114, 185);
     --cor-letra: rgb(242, 218, 233);
+    --cor-secundaria: rgb(223, 91, 175);
+    --cor-terciaria: rgb(225, 63, 165);
 }
 
 *::-webkit-scrollbar {
@@ -39,12 +41,12 @@ body {
     margin-left: 0;
     border: 1px solid var(--cor-letra); 
     padding: 10px;
+    background-color: var(--cor-secundaria);
 }
 
 #characterStory h2 {
     margin-bottom: 10px;
     font-size: 2rem;
-    text-alingn: center;
 }
 
 #characterStory p {
@@ -56,6 +58,23 @@ body {
     width: 300px;
     height: auto; 
     display:block; }
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-letra);
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.download-btn:hover {
+    background-color: var(--cor-secundaria);
+}
 
 .flex-container {
     display: flex;

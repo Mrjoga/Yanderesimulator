@@ -21,7 +21,7 @@ body {
     padding: 0;
 }
 
-.personagem {
+.character {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
